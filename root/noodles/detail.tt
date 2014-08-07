@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>麺が好き-ICHの別館([% noodle.name | html %])</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+[% INCLUDE noodles/header.tt %]
+<div id="my_contents">
+<h2 class="section_title">[% noodle.name | html %]</h2>
+[% rank.1 = '(-.-)' %]
+[% rank.2 = '(-_-)' %]
+[% rank.3 = '(^_^)' %]
+[% rank.4 = '(^v^)' %]
+[% rank.5 = '(^o^)v' %]
+<table class="noodle_detail">
+    <tr>
+        <th>食べた日：</th>
+        <td>[% noodle.date_of_eaten | html %]</td>
+    </tr>
+    <tr>
+        <th>形態：</th>
+        <td>[% noodle.edition | html %]</td>
+    </tr>
+    <tr>
+        <th>
+          [% IF noodle.edition == '店舗' %]
+            店名：
+          [% ELSE %]
+            メーカー：
+          [% END %]
+        </th>
+        <td>[% IF noodle.vendor_url != '' %]
+                <a href="[% noodle.vendor_url %]">[% noodle.vendor | html %]</a>
+            [% ELSE %]
+                [% noodle.vendor | html %]
+            [% END %]
+        </td>
+    </tr>
+</table>
+<table class="noodle_detail">
+    <tr>
+        <th>名前：</th>
+    </tr>
+    <tr>
+        <td>
+          [% noodle.name | html %]
+          [% IF noodle.photo_url != '' %]
+            <br><img class="noodle_image" src="[% noodle.photo_url %]">
+          [% END %]
+        </td>
+    </tr>
+    <tr>
+        <th>謳い文句：</th>
+     </tr>
+     <tr>
+        <td>[% noodle.text | html %]</td>
+    </tr>
+    <tr>
+        <th>感想：</th>
+    </tr>
+    <tr>
+        <td>[% rank.${noodle.impression_rank} | html %]<br>
+            [% noodle.impression_text | html %]
+        </td>
+    </tr>
+</table>
+[%- IF screen != '' -%]
+<p><a href="/noodles/[%- screen -%]/[%- page -%]/">戻る...</a></p>
+[%- ELSE -%]
+<p><a href="/noodles/top_page/">戻る...</a></p>
+[%- END -%]
+<p><a href="/noodles/top_page">ホームへ...</a></p>
+</div>
+<div id="afe_contents">
+
+</div>
+[% INCLUDE noodles/footer.tt %]
+</body>
+</html>

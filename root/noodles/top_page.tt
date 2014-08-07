@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<meta name="google-site-verification" content="jw3Ogi26ptdUwi7ngMCZRWG6bXYtvnPZeG46W0DGmQ8" />
+<title>麺が好き！- ICHの別館</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+[% INCLUDE noodles/header.tt %]
+<div id="my_contents">
+<div id="section1">
+<h2 class="sectin_titel">はじめに</h2>
+<p>
+このサイトは、主にICHの勤務日の昼食に食べた数々の麺を記録している、<a href="http://ich-sai.blog.so-net.ne.jp/">ICHの館:So-netブログ</a>のコンテンツカテゴリ『麺が好き！』、に掲載した記事を一覧表にしたものです。
+</p>
+</div>
+<div id="section2">
+<h2 class="section_title">最近食べた麺</h2>
+[% page  = 1 %][% pages = 1 %]
+[% INCLUDE noodles/impression_list.tt %]
+<p><a href="/noodles/list">もっと見る...</a></p>
+<p><a href="/noodles/search_form">検索してみる...</a></p>
+</div>
+<div id="section3">
+<h2 class="section_title">コメント</h2>
+<p>作者手抜きでごめんなさい。ご意見は、<br>
+『<a href="http://ich-sai.blog.so-net.ne.jp/">ICHの館:So-netブログ</a>』<br>
+でお願いいたします。</p>
+</div>
+</div>
+<div id="afe_contents">
+
+</div>
+[% INCLUDE noodles/footer.tt %]
+</body>
+</html>

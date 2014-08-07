@@ -1,0 +1,533 @@
+[debug] Debug messages enabled
+[debug] Statistics enabled
+[debug] Loaded plugins:
+.----------------------------------------------------------------------------.
+| Catalyst::Plugin::ConfigLoader  0.30                                       |
+'----------------------------------------------------------------------------'
+
+[debug] Loaded dispatcher "Catalyst::Dispatcher"
+[debug] Loaded engine "Catalyst::Engine"
+[debug] Found home "/home/ich_sai/catalyst/ichApp"
+[debug] Loaded Config "/home/ich_sai/catalyst/ichApp/ichapp.conf"
+[debug] Loaded components:
+.-----------------------------------------------------------------+----------.
+| Class                                                           | Type     |
++-----------------------------------------------------------------+----------+
+| ichApp::Controller::Context                                     | instance |
+| ichApp::Controller::Noodles                                     | instance |
+| ichApp::Controller::Request                                     | instance |
+| ichApp::Controller::Response                                    | instance |
+| ichApp::Controller::Root                                        | instance |
+| ichApp::Model::Noodles                                          | instance |
+| ichApp::Model::Noodles::CtrlValue                               | class    |
+| ichApp::Model::Noodles::DisplayList                             | class    |
+| ichApp::Model::Noodles::NoodleImpression                        | class    |
+| ichApp::Model::Noodles::VendorList                              | class    |
+| ichApp::View::TT                                                | instance |
+'-----------------------------------------------------------------+----------'
+
+[debug] Loaded Private actions:
+.----------------------+--------------------------------------+--------------.
+| Private              | Class                                | Method       |
++----------------------+--------------------------------------+--------------+
+| /default             | ichApp::Controller::Root             | default      |
+| /end                 | ichApp::Controller::Root             | end          |
+| /index               | ichApp::Controller::Root             | index        |
+| /request/headers     | ichApp::Controller::Request          | headers      |
+| /request/cookieProc- | ichApp::Controller::Request          | cookieProce- |
+| ess                  |                                      | ss           |
+| /request/form        | ichApp::Controller::Request          | form         |
+| /request/multiForm   | ichApp::Controller::Request          | multiForm    |
+| /request/uploadProc- | ichApp::Controller::Request          | uploadProce- |
+| ess                  |                                      | ss           |
+| /request/upload      | ichApp::Controller::Request          | upload       |
+| /request/query       | ichApp::Controller::Request          | query        |
+| /request/cookie      | ichApp::Controller::Request          | cookie       |
+| /request/process     | ichApp::Controller::Request          | process      |
+| /request/index       | ichApp::Controller::Request          | index        |
+| /request/multiProce- | ichApp::Controller::Request          | multiProcess |
+| ss                   |                                      |              |
+| /request/tt_vars     | ichApp::Controller::Request          | tt_vars      |
+| /context/index       | ichApp::Controller::Context          | index        |
+| /context/urifor      | ichApp::Controller::Context          | urifor       |
+| /context/conf        | ichApp::Controller::Context          | conf         |
+| /noodles/intro       | ichApp::Controller::Noodles          | intro        |
+| /noodles/introView   | ichApp::Controller::Noodles          | introView    |
+| /noodles/search_form | ichApp::Controller::Noodles          | search_form  |
+| /noodles/top_page    | ichApp::Controller::Noodles          | top_page     |
+| /noodles/detail      | ichApp::Controller::Noodles          | detail       |
+| /noodles/index       | ichApp::Controller::Noodles          | index        |
+| /noodles/search_res- | ichApp::Controller::Noodles          | search_resu- |
+| ult                  |                                      | lt           |
+| /noodles/list        | ichApp::Controller::Noodles          | list         |
+| /response/auth       | ichApp::Controller::Response         | auth         |
+| /response/index      | ichApp::Controller::Response         | index        |
+| /response/redirect   | ichApp::Controller::Response         | redirect     |
+| /response/refresh    | ichApp::Controller::Response         | refresh      |
+| /response/download   | ichApp::Controller::Response         | download     |
+'----------------------+--------------------------------------+--------------'
+
+[debug] Loaded Path actions:
+.-------------------------------------+--------------------------------------.
+| Path                                | Private                              |
++-------------------------------------+--------------------------------------+
+| /                                   | /index                               |
+| /...                                | /default                             |
+| /context/                           | /context/index                       |
+| /context/conf/...                   | /context/conf                        |
+| /context/urifor/...                 | /context/urifor                      |
+| /noodles/                           | /noodles/index                       |
+| /noodles/detail/...                 | /noodles/detail                      |
+| /noodles/intro/...                  | /noodles/intro                       |
+| /noodles/introView/...              | /noodles/introView                   |
+| /noodles/list/...                   | /noodles/list                        |
+| /noodles/search_form/...            | /noodles/search_form                 |
+| /noodles/search_result/...          | /noodles/search_result               |
+| /noodles/top_page/...               | /noodles/top_page                    |
+| /request/                           | /request/index                       |
+| /request/cookie/...                 | /request/cookie                      |
+| /request/cookieProcess/...          | /request/cookieProcess               |
+| /request/form/...                   | /request/form                        |
+| /request/headers/...                | /request/headers                     |
+| /request/multiForm/...              | /request/multiForm                   |
+| /request/multiProcess/...           | /request/multiProcess                |
+| /request/process/...                | /request/process                     |
+| /request/query/...                  | /request/query                       |
+| /request/tt_vars/...                | /request/tt_vars                     |
+| /request/upload/...                 | /request/upload                      |
+| /request/uploadProcess/...          | /request/uploadProcess               |
+| /response/                          | /response/index                      |
+| /response/auth/...                  | /response/auth                       |
+| /response/download/...              | /response/download                   |
+| /response/redirect/...              | /response/redirect                   |
+| /response/refresh/...               | /response/refresh                    |
+'-------------------------------------+--------------------------------------'
+
+[info] ichApp powered by Catalyst 5.90019
+HTTP::Server::PSGI: Accepting connections at http://0:3000/
+[info] *** Request 1 (0.045/s) [6472] [Sun Jan  6 23:34:47 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page/" from "111.103.188.208"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.132700s (7.536/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.073867s |
+| /end                                                       | 0.053567s |
+|  -> ichApp::View::TT->process                              | 0.052504s |
+'------------------------------------------------------------+-----------'
+
+Can't open perl script "ich_appserver.pl": No such file or directory
+[debug] Debug messages enabled
+[debug] Statistics enabled
+[debug] Loaded plugins:
+.----------------------------------------------------------------------------.
+| Catalyst::Plugin::ConfigLoader  0.30                                       |
+'----------------------------------------------------------------------------'
+
+[debug] Loaded dispatcher "Catalyst::Dispatcher"
+[debug] Loaded engine "Catalyst::Engine"
+[debug] Found home "/home/ich_sai/catalyst/ichApp"
+[debug] Loaded Config "/home/ich_sai/catalyst/ichApp/ichapp.conf"
+[debug] Loaded components:
+.-----------------------------------------------------------------+----------.
+| Class                                                           | Type     |
++-----------------------------------------------------------------+----------+
+| ichApp::Controller::Context                                     | instance |
+| ichApp::Controller::Noodles                                     | instance |
+| ichApp::Controller::Request                                     | instance |
+| ichApp::Controller::Response                                    | instance |
+| ichApp::Controller::Root                                        | instance |
+| ichApp::Model::Noodles                                          | instance |
+| ichApp::Model::Noodles::CtrlValue                               | class    |
+| ichApp::Model::Noodles::DisplayList                             | class    |
+| ichApp::Model::Noodles::NoodleImpression                        | class    |
+| ichApp::Model::Noodles::VendorList                              | class    |
+| ichApp::View::TT                                                | instance |
+'-----------------------------------------------------------------+----------'
+
+[debug] Loaded Private actions:
+.----------------------+--------------------------------------+--------------.
+| Private              | Class                                | Method       |
++----------------------+--------------------------------------+--------------+
+| /default             | ichApp::Controller::Root             | default      |
+| /end                 | ichApp::Controller::Root             | end          |
+| /index               | ichApp::Controller::Root             | index        |
+| /request/headers     | ichApp::Controller::Request          | headers      |
+| /request/cookieProc- | ichApp::Controller::Request          | cookieProce- |
+| ess                  |                                      | ss           |
+| /request/form        | ichApp::Controller::Request          | form         |
+| /request/multiForm   | ichApp::Controller::Request          | multiForm    |
+| /request/uploadProc- | ichApp::Controller::Request          | uploadProce- |
+| ess                  |                                      | ss           |
+| /request/upload      | ichApp::Controller::Request          | upload       |
+| /request/query       | ichApp::Controller::Request          | query        |
+| /request/cookie      | ichApp::Controller::Request          | cookie       |
+| /request/process     | ichApp::Controller::Request          | process      |
+| /request/index       | ichApp::Controller::Request          | index        |
+| /request/multiProce- | ichApp::Controller::Request          | multiProcess |
+| ss                   |                                      |              |
+| /request/tt_vars     | ichApp::Controller::Request          | tt_vars      |
+| /context/index       | ichApp::Controller::Context          | index        |
+| /context/urifor      | ichApp::Controller::Context          | urifor       |
+| /context/conf        | ichApp::Controller::Context          | conf         |
+| /noodles/intro       | ichApp::Controller::Noodles          | intro        |
+| /noodles/introView   | ichApp::Controller::Noodles          | introView    |
+| /noodles/search_form | ichApp::Controller::Noodles          | search_form  |
+| /noodles/top_page    | ichApp::Controller::Noodles          | top_page     |
+| /noodles/detail      | ichApp::Controller::Noodles          | detail       |
+| /noodles/index       | ichApp::Controller::Noodles          | index        |
+| /noodles/search_res- | ichApp::Controller::Noodles          | search_resu- |
+| ult                  |                                      | lt           |
+| /noodles/list        | ichApp::Controller::Noodles          | list         |
+| /response/auth       | ichApp::Controller::Response         | auth         |
+| /response/index      | ichApp::Controller::Response         | index        |
+| /response/redirect   | ichApp::Controller::Response         | redirect     |
+| /response/refresh    | ichApp::Controller::Response         | refresh      |
+| /response/download   | ichApp::Controller::Response         | download     |
+'----------------------+--------------------------------------+--------------'
+
+[debug] Loaded Path actions:
+.-------------------------------------+--------------------------------------.
+| Path                                | Private                              |
++-------------------------------------+--------------------------------------+
+| /                                   | /index                               |
+| /...                                | /default                             |
+| /context/                           | /context/index                       |
+| /context/conf/...                   | /context/conf                        |
+| /context/urifor/...                 | /context/urifor                      |
+| /noodles/                           | /noodles/index                       |
+| /noodles/detail/...                 | /noodles/detail                      |
+| /noodles/intro/...                  | /noodles/intro                       |
+| /noodles/introView/...              | /noodles/introView                   |
+| /noodles/list/...                   | /noodles/list                        |
+| /noodles/search_form/...            | /noodles/search_form                 |
+| /noodles/search_result/...          | /noodles/search_result               |
+| /noodles/top_page/...               | /noodles/top_page                    |
+| /request/                           | /request/index                       |
+| /request/cookie/...                 | /request/cookie                      |
+| /request/cookieProcess/...          | /request/cookieProcess               |
+| /request/form/...                   | /request/form                        |
+| /request/headers/...                | /request/headers                     |
+| /request/multiForm/...              | /request/multiForm                   |
+| /request/multiProcess/...           | /request/multiProcess                |
+| /request/process/...                | /request/process                     |
+| /request/query/...                  | /request/query                       |
+| /request/tt_vars/...                | /request/tt_vars                     |
+| /request/upload/...                 | /request/upload                      |
+| /request/uploadProcess/...          | /request/uploadProcess               |
+| /response/                          | /response/index                      |
+| /response/auth/...                  | /response/auth                       |
+| /response/download/...              | /response/download                   |
+| /response/redirect/...              | /response/redirect                   |
+| /response/refresh/...               | /response/refresh                    |
+'-------------------------------------+--------------------------------------'
+
+[info] ichApp powered by Catalyst 5.90019
+HTTP::Server::PSGI: Accepting connections at http://0:3000/
+[info] *** Request 1 (0.200/s) [6734] [Mon Jan  7 00:04:48 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page/" from "111.103.188.208"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.130814s (7.644/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.073111s |
+| /end                                                       | 0.052289s |
+|  -> ichApp::View::TT->process                              | 0.051207s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 3 (0.018/s) [6734] [Mon Jan  7 00:07:29 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page/" from "111.86.143.15"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.027564s (36.279/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.017646s |
+| /end                                                       | 0.005284s |
+|  -> ichApp::View::TT->process                              | 0.004487s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 5 (0.000/s) [6734] [Mon Jan  7 06:02:36 2013] ***
+[debug] Path is "noodles/search_form"
+[debug] "GET" request for "noodles/search_form" from "111.86.143.11"
+[debug] Rendering template "noodles/search_form.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 13523
+[info] Request took 0.031312s (31.937/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_form                                       | 0.013915s |
+| /end                                                       | 0.012195s |
+|  -> ichApp::View::TT->process                              | 0.011356s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 6 (0.000/s) [6734] [Mon Jan  7 06:02:49 2013] ***
+[debug] Path is "noodles/search_result"
+[debug] "POST" request for "noodles/search_result" from "111.86.143.11"
+[debug] Body Parameters are:
+.-------------------------------------+--------------------------------------.
+| Parameter                           | Value                                |
++-------------------------------------+--------------------------------------+
+| bland                               |                                      |
+| free_word                           |                                      |
+| vendor                              | 来々軒 (保土ヶ谷)             |
+'-------------------------------------+--------------------------------------'
+[debug] Rendering template "noodles/search_result.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 1720
+[info] Request took 0.050236s (19.906/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_result                                     | 0.017598s |
+| /end                                                       | 0.006951s |
+|  -> ichApp::View::TT->process                              | 0.006196s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 7 (0.000/s) [6734] [Mon Jan  7 07:41:25 2013] ***
+[debug] Path is "noodles/search_result"
+[debug] "POST" request for "noodles/search_result" from "111.86.143.13"
+[debug] Body Parameters are:
+.-------------------------------------+--------------------------------------.
+| Parameter                           | Value                                |
++-------------------------------------+--------------------------------------+
+| bland                               |                                      |
+| free_word                           |                                      |
+| vendor                              | 日清                               |
+'-------------------------------------+--------------------------------------'
+[debug] Rendering template "noodles/search_result.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4536
+[info] Request took 0.032277s (30.982/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_result                                     | 0.020678s |
+| /end                                                       | 0.005474s |
+|  -> ichApp::View::TT->process                              | 0.004693s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 8 (0.000/s) [6734] [Mon Jan  7 07:41:45 2013] ***
+[debug] Path is "noodles/search_result"
+[debug] Arguments are "2"
+[debug] "GET" request for "noodles/search_result/2" from "111.86.143.13"
+[debug] Rendering template "noodles/search_result.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4757
+[info] Request took 0.031922s (31.326/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_result                                     | 0.021580s |
+| /end                                                       | 0.005465s |
+|  -> ichApp::View::TT->process                              | 0.004739s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 9 (0.000/s) [6734] [Mon Jan  7 07:42:14 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page" from "111.86.143.13"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.027965s (35.759/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.017738s |
+| /end                                                       | 0.005437s |
+|  -> ichApp::View::TT->process                              | 0.004634s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 10 (0.000/s) [6734] [Mon Jan  7 09:46:17 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page" from "59.156.231.76"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.026376s (37.913/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.016707s |
+| /end                                                       | 0.005276s |
+|  -> ichApp::View::TT->process                              | 0.004608s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 13 (0.000/s) [6734] [Mon Jan  7 14:17:22 2013] ***
+[debug] Path is "noodles/search_result"
+[debug] "POST" request for "noodles/search_result" from "111.86.143.11"
+[debug] Body Parameters are:
+.-------------------------------------+--------------------------------------.
+| Parameter                           | Value                                |
++-------------------------------------+--------------------------------------+
+| bland                               |                                      |
+| free_word                           |                                      |
+| vendor                              | エースコック                   |
+'-------------------------------------+--------------------------------------'
+[debug] Rendering template "noodles/search_result.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4751
+[info] Request took 0.031570s (31.676/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_result                                     | 0.019922s |
+| /end                                                       | 0.005560s |
+|  -> ichApp::View::TT->process                              | 0.004810s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 14 (0.000/s) [6734] [Mon Jan  7 14:19:59 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page/" from "126.214.106.127"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.027530s (36.324/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.017926s |
+| /end                                                       | 0.005577s |
+|  -> ichApp::View::TT->process                              | 0.004731s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 16 (0.000/s) [6734] [Mon Jan  7 14:20:23 2013] ***
+[debug] Path is "noodles/detail"
+[debug] Arguments are "1321"
+[debug] "GET" request for "noodles/detail/1321" from "126.214.106.127"
+[debug] Rendering template "noodles/detail.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 1432
+[info] Request took 0.021074s (47.452/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/detail                                            | 0.003292s |
+| /end                                                       | 0.013452s |
+|  -> ichApp::View::TT->process                              | 0.012652s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 17 (0.000/s) [6734] [Mon Jan  7 14:20:57 2013] ***
+[debug] Path is "noodles/list"
+[debug] "GET" request for "noodles/list" from "126.214.106.127"
+[debug] Rendering template "noodles/list.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4330
+[info] Request took 0.028837s (34.678/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/list                                              | 0.019966s |
+| /end                                                       | 0.005358s |
+|  -> ichApp::View::TT->process                              | 0.004785s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 18 (0.000/s) [6734] [Mon Jan  7 14:21:05 2013] ***
+[debug] Path is "noodles/list"
+[debug] Arguments are "2"
+[debug] "GET" request for "noodles/list/2" from "126.214.106.127"
+[debug] Rendering template "noodles/list.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4482
+[info] Request took 0.043091s (23.207/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/list                                              | 0.033346s |
+| /end                                                       | 0.005354s |
+|  -> ichApp::View::TT->process                              | 0.004544s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 19 (0.000/s) [6734] [Mon Jan  7 14:21:08 2013] ***
+[debug] Path is "noodles/list"
+[debug] Arguments are "3"
+[debug] "GET" request for "noodles/list/3" from "126.214.106.127"
+[debug] Rendering template "noodles/list.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4536
+[info] Request took 0.042005s (23.807/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/list                                              | 0.032514s |
+| /end                                                       | 0.005594s |
+|  -> ichApp::View::TT->process                              | 0.004824s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 20 (0.000/s) [6734] [Mon Jan  7 14:21:13 2013] ***
+[debug] Path is "noodles/list"
+[debug] Arguments are "4"
+[debug] "GET" request for "noodles/list/4" from "126.214.106.127"
+[debug] Rendering template "noodles/list.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4476
+[info] Request took 0.044560s (22.442/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/list                                              | 0.034562s |
+| /end                                                       | 0.005537s |
+|  -> ichApp::View::TT->process                              | 0.004717s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 21 (0.000/s) [6734] [Mon Jan  7 14:21:20 2013] ***
+[debug] Path is "noodles/top_page"
+[debug] "GET" request for "noodles/top_page" from "126.214.106.127"
+[debug] Rendering template "noodles/top_page.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4674
+[info] Request took 0.026352s (37.948/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/top_page                                          | 0.017278s |
+| /end                                                       | 0.005256s |
+|  -> ichApp::View::TT->process                              | 0.004511s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 22 (0.000/s) [6734] [Mon Jan  7 14:21:55 2013] ***
+[debug] Path is "noodles/search_form"
+[debug] "GET" request for "noodles/search_form" from "126.214.106.127"
+[debug] Rendering template "noodles/search_form.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 13523
+[info] Request took 0.026095s (38.322/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_form                                       | 0.013325s |
+| /end                                                       | 0.008276s |
+|  -> ichApp::View::TT->process                              | 0.007540s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 23 (0.000/s) [6734] [Mon Jan  7 14:22:18 2013] ***
+[debug] Path is "noodles/search_result"
+[debug] "POST" request for "noodles/search_result" from "126.214.106.127"
+[debug] Body Parameters are:
+.-------------------------------------+--------------------------------------.
+| Parameter                           | Value                                |
++-------------------------------------+--------------------------------------+
+| bland                               |                                      |
+| free_word                           | 担々麺                            |
+| vendor                              |                                      |
+'-------------------------------------+--------------------------------------'
+[debug] Rendering template "noodles/search_result.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 4351
+[info] Request took 0.022460s (44.524/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/search_result                                     | 0.014530s |
+| /end                                                       | 0.003934s |
+|  -> ichApp::View::TT->process                              | 0.003422s |
+'------------------------------------------------------------+-----------'
+
+[info] *** Request 24 (0.000/s) [6734] [Mon Jan  7 14:23:43 2013] ***
+[debug] Path is "noodles/detail"
+[debug] Arguments are "1312"
+[debug] "GET" request for "noodles/detail/1312" from "126.214.106.127"
+[debug] Rendering template "noodles/detail.tt"
+[debug] Response Code: 200; Content-Type: text/html; charset=utf-8; Content-Length: 1883
+[info] Request took 0.010516s (95.093/s)
+.------------------------------------------------------------+-----------.
+| Action                                                     | Time      |
++------------------------------------------------------------+-----------+
+| /noodles/detail                                            | 0.002974s |
+| /end                                                       | 0.002789s |
+|  -> ichApp::View::TT->process                              | 0.001999s |
+'------------------------------------------------------------+-----------'
+

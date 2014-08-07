@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>麺が好き！- リスト</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+[% INCLUDE noodles/header.tt %]
+<div id="my_contents">
+<h2 class="sectin_titel">食べた麺の一覧</h2>
+[% INCLUDE noodles/impression_list.tt list_url = "/noodles/list" %]
+<p><a href="/noodles/top_page">ホームへ...</a></p>
+<p><a href="/noodles/search_form">検索してみる...</a></p>
+</div>
+<div id="afe_contents">
+
+</div>
+[% INCLUDE noodles/footer.tt %]
+</body>
+</html>

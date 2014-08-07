@@ -1,0 +1,149 @@
+body {
+	color : "black";
+	background-color : #eeeeee;
+	font-family: "san-serif";
+}
+
+/* for header */
+div.header {
+	margin  : 0px;
+	padding : 3px;
+	background-color : #9898ff;
+}
+h1.heaeder {
+	color : #ffffff;
+}
+
+a.header {
+	color : #ffffff;
+	text-decoration : none;
+}
+
+a:link.header {
+	color : #ffffff;
+	text-decoration : none;
+}
+
+a:visited:header {
+	color : #ffffff;
+	text-decoration : none;
+}
+
+
+/* DIV my contents */
+div#my_contents {
+	float : left;
+	padding : 0;
+	width   : 700px;
+}
+
+
+/* general table style */
+caption.tb_caption {
+}
+
+tr.head_line {
+	background : #666666;
+	color      : #ffffff;
+}
+
+tr.odd_line {
+	background : #ffffff;
+	color      : #000000;
+}
+
+tr.even_line {
+	background : #bbbbbb;
+	color      : #000000;
+}
+
+
+/* for impression_list */
+table#noodle_list {
+	table-layout : fixed;
+}
+
+table#noodle_list tr#noodle_list_head {
+	background : #666666;
+	color      : #ffffff;
+}
+
+table#noodle_list th#date_of_eaten {
+	text-align : left;
+	width : 70px;
+}
+
+table#noodle_list th {
+	text-align : left;
+	padding : 3px;
+}
+
+table#noodle_list th#vendor {
+	width : 132px;
+}
+
+table#noodle_list th#name {
+	width : 410px;
+}
+
+table#noodle_list th#rank {
+	width : 42px;
+}
+
+table#noodle_list tr.odd_line {
+	background : #ffffff;
+}
+
+table#noodle_list tr.even_line {
+	background : #bbbbbb;
+}
+
+table#noodle_list td {
+	padding : 3px;
+}
+
+/* for search_result */
+table#search_result th {
+	text-align : right;
+}
+
+table#search_result td {
+	text-align : left;
+}
+
+/* for detail */
+table.noodle_detail {
+	table-layout : fixed;
+}
+
+table.noodle_detail th {
+	vertical-align : top;
+	text-align : left;
+}
+
+table.noodle_detail td {
+	text-align : left;
+}
+
+span.item_title {
+	font-weight : bold;
+}
+
+/* for afe contents */
+div#afe_contents {
+    color : #eeeeee;
+    background-color : #eeeeee;
+}
+
+
+/* for Footer */
+div#footer {
+	clear : both;
+}
+
+div#footer_bar {
+	background-color : #9898ff;
+}
+
+/*====================================================================================*/
+/* End of File */

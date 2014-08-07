@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>__report__</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+<div id="user_agent">
+<h2 class="section_title">User Agent</h2>
+[% line_ct = 1 %]
+<table>
+<thead>
+<tr class="head_line"><th>User Agent</th><th></th></tr>
+</thead>
+<tbody>
+  [% FOREACH item = list_user_agent %]
+  [% IF line_ct mod 2 %]
+  <tr class="odd_line">
+  [% ELSE %]
+  <tr class="even_line">
+  [% END %]
+  [% line_ct = line_ct + 1 %]
+    <td>[% item.count | html %]</td>
+    <td>[% item.value | html %]</td>
+  </tr>
+  [% END %]
+</tbody>
+</table>
+</div>
+<div id="referer">
+<h2 class="section_title">Referer</h2>
+<table>
+[% line_ct = 1 %]
+<thead>
+<tr class="head_line"><th>Referer</th><th></th></tr>
+</thead>
+<tbody>
+  [% FOREACH item = list_referer %]
+  [% IF line_ct mod 2 %]
+  <tr class="odd_line">
+  [% ELSE %]
+  <tr class="even_line">
+  [% END %]
+  [% line_ct = line_ct + 1 %]
+    <td>[% item.count | html %]</td>
+    <td>[% item.value | html %]</td>
+  </tr>
+  [% END %]
+</tbody>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>麺が好き!－検索結果</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+[% INCLUDE noodles/header.tt %]
+<div id="my_contents">
+<div id="search_req">
+<h2>検索結果</h2>
+<table id="search_result">
+<tr><th>店名/メーカー：</th><td>[% vendor | html %]</td></tr>
+<tr><th>ブランド：</th><td>[% bland  | html %]</td></tr>
+<tr><th>フリーワード：</th><td>[% free_word | html %]</td></tr>
+</table>
+</div>
+<div id="impression_list">
+[% INCLUDE noodles/impression_list.tt list_url = "/noodles/search_result" %]
+</div>
+<p><a href="/noodles/search_form">検索に戻る...</a></p>
+</div>
+<div id="afe_contents">
+
+</div>
+[% INCLUDE noodles/footer.tt %]
+</body>
+</html>

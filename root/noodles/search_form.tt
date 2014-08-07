@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8'>
+<title>麺が好き！－検索</title>
+<link rel="stylesheet" type="text/css" href="/static/css/noodles.css">
+</head>
+<body>
+[% INCLUDE noodles/header.tt %]
+<div id="my_contents">
+<h2>検索</h2>
+<form method="post" action="/noodles/search_result">
+
+<p><label>店名/メーカー<br>
+<select name="vendor">
+<option value="">(None)</option>
+[% FOREACH item = vendors %]
+<option value="[% item.vendor %]">[% item.vendor %]</option>
+[% END %]
+</select>
+</label></p>
+
+<p><label>ブランド<br>
+<select name="bland">
+<option value="">(None)</option>
+<option value="凄麺">凄麺</option>
+<option value="カップヌードル">カップヌードル</option>
+<option value="名店の味">名店の味</option>
+<option value="行列のできる店のラーメン">行列のできる店のラーメン</option>
+<option value="本気盛">本気盛</option>
+<option value="でかまる">でかまる</option>
+<option value="具多">具多</option>
+<option value="一平ちゃん">一平ちゃん</option>
+<option value="スーパーカップ">スーパーカップ</option>
+<option value="匠">匠</option>
+<option value="チキンラーメン">チキンラーメン</option>
+<option value="カップスター">カップスター</option>
+<option value="飲み干す一杯">飲み干す一杯</option>
+<option value="ラーメンの底力">ラーメンの底力</option>
+<option value="太麺堂々">太麺堂々</option>
+<option value="ラ王">ラ王</option>
+<option value="究麺">究麺</option>
+<option value="スープの達人">スープの達人</option>
+<option value="全国麺めぐり">全国麺めぐり</option>
+<option value="バリカタ">バリカタ</option>
+<option value="麺処">麺処</option>
+<option value="麺の達人">麺の達人</option>
+<option value="地域の名店シリーズ">地域の名店シリーズ</option>
+<option value="ご当地最前線">ご当地最前線</option>
+<option value="中華三昧">中華三昧</option>
+<option value="有名店が推す一杯">有名店が推す一杯</option>
+<option value="麺職人">麺職人</option>
+<option value="ご当地探訪">ご当地探訪</option>
+<option value="ホームラン軒">ホームラン軒</option>
+<option value="四季物語">四季物語</option>
+<option value="職人の神髄">職人の神髄</option>
+</select>
+</label></p>
+
+<p><label>フリーワード<br>
+<input type="text" name="free_word" size="20">
+</label></p>
+<p><input type="submit"></p>
+<p><a href="/noodles/top_page">ホームへ...</a></p>
+</div>
+<div id="afe_contents">
+
+</div>
+[% INCLUDE noodles/footer.tt %]
+</body>
+</html>
